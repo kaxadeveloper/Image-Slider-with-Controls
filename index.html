@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider With Toggle Button</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/27d4dbe998.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="images">
+            <img src="img/img-1.jpg">
+            <img src="img/img-2.jpg">
+            <img src="img/img-3.jpg">
+            <img src="img/img-4.jpg">
+            <img src="img/img-5.jpg">
+        </div>
+        <div onclick="side_slide(-1)" class="slide left">
+            <span class="fas fa-angle-left"></span>
+        </div>
+        <div onclick="side_slide(1)" class="slide right">
+            <span class="fas fa-angle-right"></span>
+        </div>
+        <div class="btn-sliders">
+            <span onclick="btn_slide(1)"></span>
+            <span onclick="btn_slide(2)"></span>
+            <span onclick="btn_slide(3)"></span>
+            <span onclick="btn_slide(4)"></span>
+            <span onclick="btn_slide(5)"></span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
